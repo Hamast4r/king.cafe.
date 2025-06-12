@@ -45,11 +45,20 @@
         .section {
             display: none;
             padding: 20px;
+            color: white;
         }
 
         .active {
             display: block;
         }
+
+        .section1 { background-color: #ff6f61; } /* Coral */
+        .section2 { background-color: #6a5acd; } /* Slate Blue */
+        .section3 { background-color: #20b2aa; } /* Light Sea Green */
+        .section4 { background-color: #ffb347; } /* Light Orange */
+        .section5 { background-color: #3cb371; } /* Medium Sea Green */
+        .section6 { background-color: #ffa07a; } /* Light Salmon */
+        .section7 { background-color: #708090; } /* Slate Gray */
 
         ul {
             list-style: none;
@@ -91,6 +100,7 @@
     <header>
         <h1>King Cafe</h1>
     </header>
+
     <nav>
         <button onclick="showSection(0)" class="active">نێرگەلەکان</button>
         <button onclick="showSection(1)">خواردن</button>
@@ -100,8 +110,9 @@
         <button onclick="showSection(5)">Section 6</button>
         <button onclick="showSection(6)">Section 7</button>
     </nav>
+
     <div id="sections">
-        <div class="section active">
+        <div class="section section1 active">
             <h2>تامەکان</h2>
             <ul>
                 <li>King 1</li>
@@ -122,10 +133,11 @@
                 <li>لیمۆ</li>
             </ul>
         </div>
-        <div class="section active">
+
+        <div class="section section2">
             <h2>خواردن</h2>
             <ul>
-                <li>٤٠٠٠،٦٠٠٠،٨٠٠٠،١٠٠٠٠پیزا </li>
+                <li>٤٠٠٠،٦٠٠٠،٨٠٠٠،١٠٠٠٠پیزا</li>
                 <li>King 2</li>
                 <li>King 3</li>
                 <li>King 4</li>
@@ -143,7 +155,8 @@
                 <li>لیمۆ</li>
             </ul>
         </div>
-        <div class="section active">
+
+        <div class="section section3">
             <h2>Section 3</h2>
             <ul>
                 <li>1</li>
@@ -157,7 +170,8 @@
                 <li>9</li>
             </ul>
         </div>
-        <div class="section active">
+
+        <div class="section section4">
             <h2>Section 4</h2>
             <ul>
                 <li>1</li>
@@ -171,7 +185,8 @@
                 <li>9</li>
             </ul>
         </div>
-        <div class="section active">
+
+        <div class="section section5">
             <h2>Section 5</h2>
             <ul>
                 <li>1</li>
@@ -185,7 +200,8 @@
                 <li>9</li>
             </ul>
         </div>
-        <div class="section active">
+
+        <div class="section section6">
             <h2>Section 6</h2>
             <ul>
                 <li>1</li>
@@ -199,7 +215,8 @@
                 <li>9</li>
             </ul>
         </div>
-        <div class="section active">
+
+        <div class="section section7">
             <h2>Section 7</h2>
             <ul>
                 <li>1</li>
@@ -231,4 +248,3 @@
     </script>
 </body>
 </html>
-
