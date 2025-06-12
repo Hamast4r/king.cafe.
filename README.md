@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -46,19 +46,31 @@
             display: none;
             padding: 20px;
             color: white;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .active {
             display: block;
         }
 
-        .section1 { background-color: #ff6f61; } /* Coral */
-        .section2 { background-color: #6a5acd; } /* Slate Blue */
-        .section3 { background-color: #20b2aa; } /* Light Sea Green */
-        .section4 { background-color: #ffb347; } /* Light Orange */
-        .section5 { background-color: #3cb371; } /* Medium Sea Green */
-        .section6 { background-color: #ffa07a; } /* Light Salmon */
-        .section7 { background-color: #708090; } /* Slate Gray */
+        /* Section Colors + Hookah Icon */
+        .section1 {
+            background-color: #ff6f61;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Hookah_icon.svg/512px-Hookah_icon.svg.png');
+            background-size: 150px;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            opacity: 0.95;
+        }
+
+        .section2 { background-color: #6a5acd; }
+        .section3 { background-color: #20b2aa; }
+        .section4 { background-color: #ffb347; }
+        .section5 { background-color: #3cb371; }
+        .section6 { background-color: #ffa07a; }
+        .section7 { background-color: #708090; }
 
         ul {
             list-style: none;
@@ -70,7 +82,6 @@
             font-size: 18px;
         }
 
-        /* Responsive Design */
         @media (max-width: 600px) {
             nav {
                 flex-direction: column;
